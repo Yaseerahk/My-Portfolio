@@ -2,72 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Software Engineering Student</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+ 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Yaseerah Kader</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  
+  <header class="nav">
+  
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Hello, I'm a Web Developer</h2>
-      <p>This is my portfolio i built with html and css.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m passionate about building web applications that are fast, responsive, and user-friendly. With a focus on clean code and intuitive design, I strive to deliver great user experiences.</p>
+  <section id="home" class="section hero">
+    <div class="hero__text">
+      <p class="hello">Hello World,</p>
+      <h1 class="headline">I'm <span class="accent">Yaseerah Kader</span></h1>
+      <h2 class="subhead">Software Engineering Student</h2>
+      <p class="where">Currently studying at WeThinkCode_</p>
+      <a class="btn" href="#contact">Hire Me</a>
     </div>
-  </section>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
-        </div>
-        <div class="project-card">
-          <h3>To-Do List App</h3>
-          <p>A simple to-do app using JavaScript and local storage.</p>
-        </div>
-        <div class="project-card">
-          <h3>Responsive Blog</h3>
-          <p>A blog template designed to work across all devices.</p>
-        </div>
+ 
+    <div class="hero__visual">
+      <div class="glow-ring">
+        <img src="c:\Users\yasee\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\88F4EE270F7B74877A1FD3EF65DF2192\WhatsApp Image 2025-08-17 at 20.55.42_869645c7.jpg"
+             alt="Profile" />
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: yaseerahkader2309@gmail.com</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/yaseerah</a></p>
-      <p><a href="#">github</a></p>
+
+  <section id="about" class="section about">
+    <h3 class="section-title">About Me</h3>
+
+    <div class="about__grid">
+      <div class="about__image">
+        {% comment %} <div class="glow-card"> {% endcomment %}
+          {% comment %} <img src=""
+               alt="About" /> {% endcomment %}
+        </div>
+      </div>
+
+      <div class="about__content">
+        <h4 class="eyebrow">Building,Creating & Problem solving is my passion</h4>
+        <p>
+          I'm a curious software engineering student who loves turning ideas into
+          interactive, accessible experiences. I enjoy frontend craft, backend fundamentals,
+          and clean, human-centered UX.
+        </p>
+        <p>
+          I am currently trying to learn and grasp as much programming skills.
+        </p>
+        <a class="btn btn--ghost" href="Yaseerah Kader_CV" download>Download CV</a>
+        
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Yaseerah K. All rights reserved.</p>
+  
+  <section id="skills" class="section skills">
+    <h3 class="section-title">My Skills</h3>
+
+    <div class="skills__grid">
+      <div class="skills__intro">
+        <h4 class="eyebrow">Skills reflect my growth</h4>
+        <p>
+         I try and practice fundamentals daily such as problem solving and readable code,visit my github to see what i've build so far.
+        </p>
+        <div class="xp">
+         
+        </div>
+      </div>
+
+      <div class="skills__bars">
+
+        <div class="bar">
+          <div class="bar__label">HTML</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:80%"></span></div>
+          <div class="bar__value">80%</div>
+        </div>
+
+
+        <div class="bar">
+          <div class="bar__label">CSS</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:80%"></span></div>
+          <div class="bar__value">80%</div>
+        </div>
+
+
+        <div class="bar">
+          <div class="bar__label">JavaScript</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:70%"></span></div>
+          <div class="bar__value">70%</div>
+        </div>
+
+
+        <div class="bar">
+          <div class="bar__label">Python</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:60%"></span></div>
+          <div class="bar__value">60%</div>
+        </div>
+
+        
+        <div class="bar">
+          <div class="bar__label">Java</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:50%"></span></div>
+          <div class="bar__value">50%</div>
+        </div>
+
+        
+        <div class="bar">
+          <div class="bar__label">SQL</div>
+          <div class="bar__track"><span class="bar__fill" style="--w:50%"></span></div>
+          <div class="bar__value">50%</div>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+ 
+  <section id="services" class="section services">
+    <h3 class="section-title">My Services</h3>
+
+    <div class="cards">
+      <article class="card">
+        <h4>Web Development</h4>
+        <p>Responsive pages with semantic HTML & modern CSS.</p>
+      </article>
+
+      <article class="card">
+        <h4>UI Prototyping</h4>
+        <p>Wireframes and high-fidelity mockups using figma.</p>
+      </article>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section contact">
+    <h3 class="section-title">Contact Me</h3>
+   <p>Email: yaseerahkader04@gmail.com</p>
+   <p>Github: Yaseerahk</p>
+   <p>LinkedIn: Yaseerah Kader </p>
+   <p>Phone: 066 477 6859 </p>
+
+
+
+  </section>
+
+ 
+  <footer class="footer">
+    Created by Yaseerah; © 2025 All Rights Reserved
   </footer>
 </body>
 </html>
